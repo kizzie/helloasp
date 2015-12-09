@@ -25,7 +25,7 @@ namespace HelloASP
             app.Run(async (context) =>
             {
                 Console.WriteLine("request for " + context.Request.Path);
-                await context.Response.WriteAsync("Hello World! How are you <br/>");
+                await context.Response.WriteAsync("Hello World! How are you \n");
                 await context.Response.WriteAsync("A second line");
             });
         }
